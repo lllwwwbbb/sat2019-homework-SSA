@@ -1,0 +1,48 @@
+public class Test extends java.lang.Object
+{
+    int x;
+
+    public void <init>()
+    {
+        Test r0;
+
+        r0 := @this: Test;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public int test(int)
+    {
+        Test r0;
+        int i0, $i1, $i2;
+        byte b3, b3_1, b3_2;
+
+        r0 := @this: Test;
+
+        i0 := @parameter0: int;
+
+        b3 = 7;
+
+        r0.<Test: int x> = 7;
+
+        if i0 <= 10 goto label1;
+
+        r0.<Test: int x> = 6;
+
+(0)     goto label2;
+
+     label1:
+(1)     b3_1 = 6;
+
+     label2:
+        b3_2 = Phi(b3 #0, b3_1 #1);
+
+        $i1 = r0.<Test: int x>;
+
+        $i2 = $i1 - b3_2;
+
+        return $i2;
+    }
+}
