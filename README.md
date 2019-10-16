@@ -2,7 +2,7 @@
 - 罗雯波，MG1933100
 
 ## 代码说明
-本次作业所使用的程序由**JAVA**语言编写，并采用**SOOT**分析框架来进行部分SSA的转换。*Test.java*是用于分析的程序的源代码，SOOT工具在*lib*目录下。
+本次作业所使用的程序由**JAVA**语言编写，并采用**SOOT**分析框架来进行部分SSA的转换。*Test.java*是用于分析的程序的源代码，SOOT工具版本为 trunk。
 
 ## 分析过程
 首先使用命令  
@@ -10,7 +10,7 @@
 
 编译源代码。
 
-接着使用命令
+接着使用命令（需要下载[SOOT](https://soot-build.cs.uni-paderborn.de/public/origin/develop/soot/soot-develop/build/)到*lib*目录下）
 > java -jar lib/sootclasses-trunk-jar-with-dependencies.jar -cp . -pp -f shimple Test 
 
 即可生成部分转换为SSA的中间代码，在*sootOutput*目录下。
